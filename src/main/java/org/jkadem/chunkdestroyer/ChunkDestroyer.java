@@ -1,8 +1,8 @@
-package org.jkadem.test1;
+package org.jkadem.chunkdestroyer;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.jkadem.test1.commands.CDCommands;
-import org.jkadem.test1.gamemode.CDManager;
+import org.jkadem.chunkdestroyer.commands.CDCommands;
+import org.jkadem.chunkdestroyer.gamemode.CDManager;
 
 import java.util.Objects;
 
@@ -19,6 +19,8 @@ public final class ChunkDestroyer extends JavaPlugin {
     Objects.requireNonNull(getCommand("CDSetTimerDuration")).setExecutor(new CDCommands(this));
 
     cdManager = new CDManager(this);
+
+    cdManager.startChunkChecker();
 
   }
 

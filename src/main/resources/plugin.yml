@@ -1,6 +1,6 @@
-name: Test1
+name: ChunkDestroyer
 version: '${project.version}'
-main: org.jkadem.test1.Test1
+main: org.jkadem.chunkdestroyer.ChunkDestroyer
 api-version: '1.20'
 commands:
   CDStartChunk:

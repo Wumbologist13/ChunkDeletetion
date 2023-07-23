@@ -1,13 +1,10 @@
-package org.jkadem.test1.commands;
+package org.jkadem.chunkdestroyer.commands;
 
-import org.jkadem.test1.ChunkDestroyer;
-import org.jkadem.test1.commands.CDCommands;
+import org.jkadem.chunkdestroyer.ChunkDestroyer;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-
-import java.util.Objects;
 
 public class CDCommands implements CommandExecutor{
 

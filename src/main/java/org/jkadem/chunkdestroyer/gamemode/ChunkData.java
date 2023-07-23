@@ -1,4 +1,4 @@
-package org.jkadem.test1.gamemode;
+package org.jkadem.chunkdestroyer.gamemode;
 
 import org.bukkit.Chunk;
 import java.util.HashMap;

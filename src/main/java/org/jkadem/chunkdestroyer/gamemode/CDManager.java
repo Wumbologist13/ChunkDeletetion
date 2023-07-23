@@ -1,13 +1,11 @@
-package org.jkadem.test1.gamemode;
-
-import org.jkadem.test1.gamemode.ChunkData;
+package org.jkadem.chunkdestroyer.gamemode;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
-import org.jkadem.test1.ChunkDestroyer;
+import org.jkadem.chunkdestroyer.ChunkDestroyer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +18,7 @@ public class CDManager {
   private final Map<Chunk, ChunkData> chunkDataMap = new HashMap<>();
 
   // Default to 10 minutes for now
-  private int timerDuration = 600;
+  private int timerDuration = 10;
 
   public CDManager(ChunkDestroyer cd) {this.cd = cd;}
 
@@ -41,7 +39,7 @@ public class CDManager {
 
           if (chunkData.getTotalTime() >= timerDuration) { // 600 seconds = 10 minutes
             new BukkitRunnable() {
-              int countdown = 10; // 10 second countdown
+              int countdown = 600; // 10 second countdown
 
               @Override
               public void run() {
