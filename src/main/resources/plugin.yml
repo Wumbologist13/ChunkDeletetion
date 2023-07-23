@@ -3,7 +3,12 @@ version: '${project.version}'
 main: org.jkadem.test1.Test1
 api-version: '1.20'
 commands:
-  startchunk:
+  CDStartChunk:
     description: Starts the chunk checker.
-  stopchunk:
+    usage: /<command>
+  CDStopChunk:
     description: Stops the chunk checker.
+    usage: /<command>
+  CDSetTimerDuration:
+    description: Sets the time required to remove the chunk. Resets all current time on chunk
+    usage: /<command> <time (seconds)>
