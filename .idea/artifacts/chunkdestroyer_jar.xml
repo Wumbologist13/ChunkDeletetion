@@ -2,7 +2,7 @@
   <artifact type="jar" name="chunkdestroyer:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/chunkdestroyer_jar</output-path>
     <root id="archive" name="chunkdestroyer.jar">
-      <element id="module-output" name="chunkdestroyer" />
+      <element id="module-output" name="ruleroulette" />
       <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
     </root>
   </artifact>

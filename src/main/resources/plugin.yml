@@ -12,3 +12,6 @@ commands:
   CDSetTimerDuration:
     description: Sets the time required to remove the chunk. Resets all current time on chunk
     usage: /<command> <time (seconds)>
+  CDGetTimerDuration:
+    description: Shows the current timer duration
+    usage: /<command>
