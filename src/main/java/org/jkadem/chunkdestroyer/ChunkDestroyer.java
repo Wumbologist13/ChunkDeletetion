@@ -21,7 +21,8 @@ public final class ChunkDestroyer extends JavaPlugin {
     cdManager = new CDManager(this);
 
     cdManager.startChunkChecker();
-
+    cdManager.startScheduleSwap();
+    cdManager.startRandomJump();
   }
 
   @Override
