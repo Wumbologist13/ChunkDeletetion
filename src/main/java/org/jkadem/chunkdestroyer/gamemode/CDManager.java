@@ -31,14 +31,16 @@ public class CDManager {
   }
 
   public void startRandomJump() {
-    int delay = 20 * 60 * (random.nextInt(3) + 1);
+    //int delay = 20 * 60 * (random.nextInt(3) + 1);
+    int delay = 20 * 10;
     System.out.println("JUMPING!");
     jumpTask = new BukkitRunnable() {
       @Override
       public void run() {
         for (Player player : Bukkit.getOnlinePlayers()) {
-          player.setVelocity(player.getVelocity().setY(10.0));
+          player.setVelocity(player.getVelocity().setY(0.75));
         }
+        startRandomJump();
       }
     }.runTaskLater(cd, delay);
   }
