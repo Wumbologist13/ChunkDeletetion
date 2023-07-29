@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class CDManager {
 
-  private ChunkDestroyer cd;
+  private final ChunkDestroyer cd;
   private BukkitTask bt;
-  private ChunkTimeManager ctm;
+  private final ChunkTimeManager ctm;
 
   private final Map<Chunk, ChunkData> chunkDataMap = new HashMap<>();
 
