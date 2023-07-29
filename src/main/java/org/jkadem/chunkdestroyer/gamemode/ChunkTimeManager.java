@@ -14,7 +14,7 @@ public class ChunkTimeManager {
 
   }
 
-  // Increment the time on all the chunk datas and remove any that is over the limit
+  // Increment the time on all the chunk data's and remove any that is over the limit
   public void increment() {
     for (ChunkData chunkData : chunkMap.values()) {
 
@@ -34,16 +34,13 @@ public class ChunkTimeManager {
     }
   }
 
-  public boolean addChunk(Chunk chunk) {
+  public void addChunk(Chunk chunk) {
 
-    if (chunkMap.containsKey(chunk)) {
-      return false;
-    }
-    else {
+    if (!chunkMap.containsKey(chunk)) {
+
       System.out.println("INPUT NEW CHUNK INTO MAP");
       chunkMap.put(chunk, new ChunkData(chunk));
     }
-    return true;
   }
 
   public void setDeleteTime(int seconds) {
