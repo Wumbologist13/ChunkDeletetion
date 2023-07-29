@@ -31,8 +31,8 @@ public class CDManager {
   }
 
   public void startRandomJump() {
-    //int delay = 20 * 60 * (random.nextInt(3) + 1);
-    int delay = 20 * 10;
+    int delay = 20 * 60 * (random.nextInt(2) + 1);
+    //int delay = 20 * 10;
     System.out.println("JUMPING!");
     jumpTask = new BukkitRunnable() {
       @Override
